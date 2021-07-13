@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E7111ED318B23105C7B05F4 /* Pods_NSInvocationDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5302B2A886CB88CF25784830 /* Pods_NSInvocationDemo.framework */; };
 		FF529408269D645F00D676D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF529407269D645F00D676D4 /* AppDelegate.m */; };
 		FF52940B269D645F00D676D4 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF52940A269D645F00D676D4 /* SceneDelegate.m */; };
 		FF52940E269D645F00D676D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF52940D269D645F00D676D4 /* ViewController.m */; };
@@ -14,9 +15,13 @@
 		FF529413269D646200D676D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF529412269D646200D676D4 /* Assets.xcassets */; };
 		FF529416269D646200D676D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF529414269D646200D676D4 /* LaunchScreen.storyboard */; };
 		FF529419269D646200D676D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF529418269D646200D676D4 /* main.m */; };
+		FF529425269D7F6100D676D4 /* NSObject+performSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = FF529424269D7F6100D676D4 /* NSObject+performSelector.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A9C709872F4D705C9E165D7 /* Pods-NSInvocationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSInvocationDemo.debug.xcconfig"; path = "Target Support Files/Pods-NSInvocationDemo/Pods-NSInvocationDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		218B75949ACA20EE183F941F /* Pods-NSInvocationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSInvocationDemo.release.xcconfig"; path = "Target Support Files/Pods-NSInvocationDemo/Pods-NSInvocationDemo.release.xcconfig"; sourceTree = "<group>"; };
+		5302B2A886CB88CF25784830 /* Pods_NSInvocationDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NSInvocationDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF529403269D645F00D676D4 /* NSInvocationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSInvocationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF529406269D645F00D676D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FF529407269D645F00D676D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +34,9 @@
 		FF529415269D646200D676D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF529417269D646200D676D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF529418269D646200D676D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF52941F269D658600D676D4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FF529423269D7F6100D676D4 /* NSObject+performSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+performSelector.h"; sourceTree = "<group>"; };
+		FF529424269D7F6100D676D4 /* NSObject+performSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+performSelector.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +44,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E7111ED318B23105C7B05F4 /* Pods_NSInvocationDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39F48D9279977705E0DEC5D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A9C709872F4D705C9E165D7 /* Pods-NSInvocationDemo.debug.xcconfig */,
+				218B75949ACA20EE183F941F /* Pods-NSInvocationDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FDBBC43CD79C76C373114775 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5302B2A886CB88CF25784830 /* Pods_NSInvocationDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FF5293FA269D645F00D676D4 = {
 			isa = PBXGroup;
 			children = (
 				FF529405269D645F00D676D4 /* NSInvocationDemo */,
 				FF529404269D645F00D676D4 /* Products */,
+				39F48D9279977705E0DEC5D3 /* Pods */,
+				FDBBC43CD79C76C373114775 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,11 +95,14 @@
 				FF52940A269D645F00D676D4 /* SceneDelegate.m */,
 				FF52940C269D645F00D676D4 /* ViewController.h */,
 				FF52940D269D645F00D676D4 /* ViewController.m */,
+				FF529423269D7F6100D676D4 /* NSObject+performSelector.h */,
+				FF529424269D7F6100D676D4 /* NSObject+performSelector.m */,
 				FF52940F269D645F00D676D4 /* Main.storyboard */,
 				FF529412269D646200D676D4 /* Assets.xcassets */,
 				FF529414269D646200D676D4 /* LaunchScreen.storyboard */,
 				FF529417269D646200D676D4 /* Info.plist */,
 				FF529418269D646200D676D4 /* main.m */,
+				FF52941F269D658600D676D4 /* PrefixHeader.pch */,
 			);
 			path = NSInvocationDemo;
 			sourceTree = "<group>";
@@ -83,9 +114,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF52941C269D646200D676D4 /* Build configuration list for PBXNativeTarget "NSInvocationDemo" */;
 			buildPhases = (
+				718B538518565779AD0E8F02 /* [CP] Check Pods Manifest.lock */,
 				FF5293FF269D645F00D676D4 /* Sources */,
 				FF529400269D645F00D676D4 /* Frameworks */,
 				FF529401269D645F00D676D4 /* Resources */,
+				8F76FFAF9C933E0DBECF2686 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,12 +173,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		718B538518565779AD0E8F02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NSInvocationDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F76FFAF9C933E0DBECF2686 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NSInvocationDemo/Pods-NSInvocationDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NSInvocationDemo/Pods-NSInvocationDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NSInvocationDemo/Pods-NSInvocationDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FF5293FF269D645F00D676D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FF52940E269D645F00D676D4 /* ViewController.m in Sources */,
+				FF529425269D7F6100D676D4 /* NSObject+performSelector.m in Sources */,
 				FF529408269D645F00D676D4 /* AppDelegate.m in Sources */,
 				FF529419269D646200D676D4 /* main.m in Sources */,
 				FF52940B269D645F00D676D4 /* SceneDelegate.m in Sources */,
@@ -288,10 +364,12 @@
 		};
 		FF52941D269D646200D676D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A9C709872F4D705C9E165D7 /* Pods-NSInvocationDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/NSInvocationDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = NSInvocationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,10 +383,12 @@
 		};
 		FF52941E269D646200D676D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 218B75949ACA20EE183F941F /* Pods-NSInvocationDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/NSInvocationDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = NSInvocationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
